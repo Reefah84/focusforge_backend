@@ -1,0 +1,67 @@
+.navbar {
+  width: 100%; /* Full width */
+  height: 80px; /* Adjusted height */
+  background-color: #333; /* Dark background for elegance */
+  font-family: Arial, sans-serif; /* Modern font */
+  box-shadow: 0 2px 4px #000000; /* Subtle shadow for depth */
+}
+
+/* Ensure the container fluid takes the full height of the navbar */
+.navbar .container-fluid {
+  height: 100%;
+  padding: 0 15px; /* Adjusted padding for spacing */
+}
+
+/* Style for the brand logo or name */
+.container-fluid .navbar-brand {
+  color: black; /* Bright color for contrast */
+  font-size: 40px; /* Larger size for brand emphasis */
+  font-family: "Kode Mono", monospace;
+  line-height: 60px; /* Center text vertically */
+  transition: color 0.3s; /* Smooth transition for hover effects */
+  padding: 4px;
+}
+
+.container-fluid .navbar-brand:hover {
+  color: grey; /* Slightly lighter color on hover */
+}
+
+/* Style for navigation items */
+.navbar-nav .nav-item {
+  margin: 0 10px; /* Spacing between items */
+  line-height: 60px; /* Center text vertically */
+  font-size: 20px; /* Larger size for items */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-nav .nav-link {
+  color: black; /* Lighter color for items */
+  line-height: 60px; /* Center text vertically */
+  transition: color 0.3s; /* Smooth transition for hover effects */
+}
+
+.navbar-nav .nav-link:hover {
+  color: silver; /* Bright color on hover */
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px; /* Adjust height as needed */
+  background-color: white;
+  margin-top: 10px; 
+  margin-left: 300px;
+  margin-right: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  width: 100%; /* Adjust width as needed */
+  max-width: 500px; /* Prevents the form from becoming too wide on larger screens */
+}
+
+.text-center {
+  text-align: center;
+}

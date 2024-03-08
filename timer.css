@@ -1,0 +1,122 @@
+.navbar {
+  width: 100%; /* Full width */
+  height: 80px; /* Adjusted height */
+  background-color: #333; /* Dark background for elegance */
+  font-family: Arial, sans-serif; /* Modern font */
+  box-shadow: 0 2px 4px #000000; /* Subtle shadow for depth */
+}
+
+/* Ensure the container fluid takes the full height of the navbar */
+.navbar .container-fluid {
+  height: 100%;
+  padding: 0 15px; /* Adjusted padding for spacing */
+}
+
+/* Style for the brand logo or name */
+.container-fluid .navbar-brand {
+  color: black; /* Bright color for contrast */
+  font-size: 40px; /* Larger size for brand emphasis */
+  font-family: "Kode Mono", monospace;
+  line-height: 60px; /* Center text vertically */
+  transition: color 0.3s; /* Smooth transition for hover effects */
+  padding: 4px;
+}
+
+.container-fluid .navbar-brand:hover {
+  color: grey; /* Slightly lighter color on hover */
+}
+
+/* Style for navigation items */
+.navbar-nav .nav-item {
+  margin: 0 10px; /* Spacing between items */
+  line-height: 60px; /* Center text vertically */
+  font-size: 20px; /* Larger size for items */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-nav .nav-link {
+  color: black; /* Lighter color for items */
+  line-height: 60px; /* Center text vertically */
+  transition: color 0.3s; /* Smooth transition for hover effects */
+}
+
+.navbar-nav .nav-link:hover {
+  color: silver; /* Bright color on hover */
+}
+/* Existing navbar styles */
+
+/* Container styling */
+.container {
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Start by trying to take full width */
+  max-width: 450px; /* Set a maximum width */
+  margin-top: 50px;
+  height: auto;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+#timerDisplay {
+  font-size: 5em; /* Larger display */
+  margin-bottom: 20px;
+}
+.input-group {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  gap: 25px;
+}
+.button-group {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  gap: 20px;
+}
+input[type="number"] {
+  width: 80px; /* Adjusted width */
+  height: 50px;
+  padding: 5px;
+  font-size: 2em;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px 5px; /* Spacing between buttons */
+  font-size: 1em;
+  margin-top: 5px;
+  border: none;
+  box-shadow: 2px 5px 9px 2px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Dynamic colors for buttons - this should be handled by JS */
+.start-btn {
+  background-color: #4caf50; /* Green */
+}
+
+.pause-btn {
+  background-color: #f0ad4e; /* Orange */
+}
+
+.stop-btn {
+  background-color: #d9534f; /* Red */
+}
+
+button:hover {
+  opacity: 0.7;
+  color: white;
+  cursor: pointer;
+}
+button:active {
+  transform: translateY(2px);
+}
