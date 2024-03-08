@@ -1,6 +1,6 @@
 # Focus Forge
 
-###Please ensure thant you clone the repository in "C:\xampp\htdocs" pathway to be able to access the website through "http://localhost/focusforge_backend/home.php".
+### Please ensure thant you clone the repository in "C:\xampp\htdocs" pathway to be able to access the website through "http://localhost/focusforge_backend/home.php".
 
 Welcome to **Focus Forge** – a web application designed to help students enhance their focus and manage their tasks efficiently. With a minimalist and user-friendly interface, Focus Forge aims to facilitate productivity and time management through dedicated focus sessions and task organization.
 
