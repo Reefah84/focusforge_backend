@@ -30,10 +30,10 @@ include 'head.php';
             <th>Task Completion Date</th>
             <th>Actions</th>
         </tr>
-        <?php foreach ($All_tasks as $task) { ?>
+        <?php foreach ($All_tasks as $key => $task) { ?>
             <tr>
                 <td>
-                    <?php echo $task['id']; ?>
+                    <?php echo $key + 1; ?>
                 </td>
                 <td>
                     <?php echo $task['task']; ?>
@@ -41,7 +41,7 @@ include 'head.php';
                 <td>
                     <?php echo $task['date']; ?>
                 </td>
-                <td><button class="btn btn-primary" onclick="gotopage(<?php echo $task['id']; ?>)">Edit</button>
+                <td>
                     <form action="delete.php" method="POST" style="display: inline;"
                         onsubmit="return confirm('Are you sure you want to delete this task?');">
                         <input type="hidden" name="id" value="<?php echo $task['id']; ?>">

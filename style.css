@@ -5,51 +5,59 @@ body, html {
   height: 100%;
   overflow-x: hidden; /* Prevent horizontal scroll */
 }
-
 .navbar {
-  width: 100%; /* Full width */
-  height: 80px; /* Adjusted height */
-  background-color: #333; /* Dark background for elegance */
-  font-family: Arial, sans-serif; /* Modern font */
-  box-shadow: 0 2px 2px #000000; /* Subtle shadow for depth */
+  background: linear-gradient(45deg, #abfff1, #e9b9ff);
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between !important; /* This will separate the logo and the nav elements */
+  align-items: center !important;
 }
-
-/* Ensure the container fluid takes the full height of the navbar */
-.navbar .container-fluid {
-  height: 100%;
-  padding: 0 15px; /* Adjusted padding for spacing */
+.navbar .navbar-brand {
+  font-size: 2.5rem;
+  color: black;
+  font-family: "Tomorrow", sans-serif;
 }
-
-/* Style for the brand logo or name */
-.container-fluid .navbar-brand {
-  color: black; /* Bright color for contrast */
-  font-size: 40px; /* Larger size for brand emphasis */
-  font-family: "Kode Mono", monospace;
-  line-height: 60px; /* Center text vertically */
-  transition: color 0.3s; /* Smooth transition for hover effects */
-  padding: 4px;
+.navbar .navbar-brand:hover {
+  color: rgb(29, 179, 210);
 }
-
-.container-fluid .navbar-brand:hover {
-  color: grey; /* Slightly lighter color on hover */
+.navbar .navbar-brand:active {
+  color: rgb(249, 249, 249);
+  transform: translate(2px, 2px);
 }
-
-/* Style for navigation items */
-.navbar-nav .nav-item {
-  margin: 0 10px; /* Spacing between items */
-  line-height: 60px; /* Center text vertically */
-  font-size: 20px; /* Larger size for items */
-  font-family: Arial, Helvetica, sans-serif;
+.navbar .nav-link {
+  font-size: 1rem;
+  color: black;
+  margin-right: 10px;
+  margin-left: 10px;
+  text-transform: uppercase;
+  font-family: "Tomorrow", sans-serif;
 }
-
-.navbar-nav .nav-link {
-  color: black; /* Lighter color for items */
-  line-height: 60px; /* Center text vertically */
-  transition: color 0.3s; /* Smooth transition for hover effects */
+.navbar .nav-link:hover {
+  color: rgb(29, 179, 210);
+  transform: scale(1.1);
 }
-
-.navbar-nav .nav-link:hover {
-  color: silver; /* Bright color on hover */
+.navbar .nav-link:active {
+  color: rgb(249, 249, 249);
+  transform: translate(2px, 2px);
+}
+.navbar .btn {
+  font-size: 20px;
+  color: black;
+  height: 40px;
+  width: 100px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  border: 1px solid rgb(0, 128, 255);
+  box-shadow: 0 2px 4px rgba(100, 100, 100, 0.1), 0 0 4px rgb(0, 0, 0);
+  font-family: "Tomorrow", sans-serif;
+}
+.navbar .btn:hover {
+  background-color: rgb(116, 225, 247);
+  color: white;
+  transform: scale(1.1);
 }
 #carouselExampleCaptions .carousel-item img {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Box shadow for the carousel item image */
@@ -77,19 +85,34 @@ body, html {
 .card {
   width: 350px;
   height: 200px;
-  margin: 10px auto;
+  margin: 10px auto; /* Center the cards horizontally */
   margin-top: 75px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Adjust the row and column gap */
+.row {
+  margin-right: -30px; /* Increase negative margin to create more gap on the right */
+  margin-left: -30px; /* Increase negative margin to create more gap on the left */
+}
+
+.col {
+  padding-right: 30px; /* Increase padding to accommodate the negative margin */
+  padding-left: 30px; /* Increase padding to accommodate the negative margin */
 }
 .card:hover {
     transform: scale(1.05); /* Increase the card size by 5% on hover */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Optional: Enhance shadow for a "lifted" effect */
   }
-.card-img-top {
-  height: 200px;
-  object-fit: cover;
-}
+  .card-img-top {
+    height: auto;
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 200px;
+    margin: 0 auto;
+    display: block;
+  }
 .card-body {
   display: flex;
   flex-direction: column; /* Stack items vertically */
@@ -100,6 +123,7 @@ body, html {
 }
 .card-title {
   font-size: 24px;
+  font-family: "Tomorrow", sans-serif;
 }
 
 .card-text {
@@ -126,6 +150,62 @@ body, html {
 .mb-extra {
   margin-bottom: 150px; /* Adjust the value based on your preference */
 }
+.main {
+  background-image: url("timerbackground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: 50% 50%;
+  height: 100vh;
+  width: 100%;
+}
+.main h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+  font-family: "Tomorrow", sans-serif;
+}
+.main .btn1 a{
+  text-decoration: none;
+  color: white;
+  font-family: "Tomorrow", sans-serif;
+}
+.main .btn1{
+  height: 40px;
+  width: 40%;
+  border: none;
+  outline: none;
+  border-radius: 60px;
+  background-color: rgb(29, 179, 210);
+  color: white;
+  font-weight: 700;
+  font-size: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.main .btn1 a:hover{
+  color: black;
+}
+.main .btn1:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  transform: scale(1.1);
+  border: none;
+  outline: none;
+  border: 1px solid black;
+}
+.main .btn1:active {
+  border-color: black;
+  transform: translate(2px, 4px);
+}
+.main .btn2 a:active{
+  border-color: black;
+  transform: translate(2px, 4px);
+}
+.image-heading {
+  margin-top: 20px;
+  margin-bottom: -15px;
+}
 .site-footer {
   background-color: #333333;
   color: #ffffff;
@@ -141,12 +221,13 @@ body, html {
 }
 
 .site-footer a {
-  color: #999999;
+  color: #ffffff;
   margin-bottom: 20px;
+  text-decoration: none;
 }
 
 .site-footer a:hover {
-  color: #efefef;
+  color: #b5b5b5;
   text-decoration: none;
 }
 

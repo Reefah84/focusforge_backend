@@ -1,53 +1,75 @@
+body {
+  background-image: url('galaxybg4.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px;
+}
 .navbar {
-  width: 100%; /* Full width */
-  height: 80px; /* Adjusted height */
-  background-color: #333; /* Dark background for elegance */
-  font-family: Arial, sans-serif; /* Modern font */
-  box-shadow: 0 2px 4px #000000; /* Subtle shadow for depth */
+  background: linear-gradient(45deg, #abfff1, #e9b9ff);
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between !important; /* This will separate the logo and the nav elements */
+  align-items: center !important;
 }
-
-/* Ensure the container fluid takes the full height of the navbar */
-.navbar .container-fluid {
-  height: 100%;
-  padding: 0 15px; /* Adjusted padding for spacing */
+.navbar .navbar-brand {
+  font-size: 2.5rem;
+  color: black;
+  font-family: "Tomorrow", sans-serif;
 }
-
-/* Style for the brand logo or name */
-.container-fluid .navbar-brand {
-  color: black; /* Bright color for contrast */
-  font-size: 40px; /* Larger size for brand emphasis */
-  font-family: "Kode Mono", monospace;
-  line-height: 60px; /* Center text vertically */
-  transition: color 0.3s; /* Smooth transition for hover effects */
-  padding: 4px;
+.navbar .navbar-brand:hover {
+  color: rgb(29, 179, 210);
 }
-
-.container-fluid .navbar-brand:hover {
-  color: grey; /* Slightly lighter color on hover */
+.navbar .navbar-brand:active {
+  color: rgb(249, 249, 249);
+  transform: translate(2px, 2px);
 }
-
-/* Style for navigation items */
-.navbar-nav .nav-item {
-  margin: 0 10px; /* Spacing between items */
-  line-height: 60px; /* Center text vertically */
-  font-size: 20px; /* Larger size for items */
-  font-family: Arial, Helvetica, sans-serif;
+.navbar .nav-link {
+  font-size: 1rem;
+  color: black;
+  margin-right: 10px;
+  margin-left: 10px;
+  text-transform: uppercase;
+  font-family: "Tomorrow", sans-serif;
 }
-
-.navbar-nav .nav-link {
-  color: black; /* Lighter color for items */
-  line-height: 60px; /* Center text vertically */
-  transition: color 0.3s; /* Smooth transition for hover effects */
+.navbar .nav-link:hover {
+  color: rgb(29, 179, 210);
+  transform: scale(1.1);
 }
-
-.navbar-nav .nav-link:hover {
-  color: silver; /* Bright color on hover */
+.navbar .nav-link:active {
+  color: rgb(249, 249, 249);
+  transform: translate(2px, 2px);
+}
+.navbar .btn {
+  font-size: 20px;
+  color: black;
+  height: 40px;
+  width: 100px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  border: 1px solid rgb(0, 128, 255);
+  box-shadow: 0 2px 4px rgba(100, 100, 100, 0.1), 0 0 4px rgb(0, 0, 0);
+  font-family: "Tomorrow", sans-serif;
+}
+.navbar .btn:hover {
+  background-color: rgb(116, 225, 247);
+  color: white;
+  transform: scale(1.1);
 }
 /* Existing navbar styles */
 
 /* Container styling */
-.container {
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+
+.timer-container {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,12 +79,15 @@
   padding: 40px;
   border-radius: 15px;
   box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.1);
-  width: 100%; /* Start by trying to take full width */
-  max-width: 450px; /* Set a maximum width */
-  margin-top: 50px;
+  width: 100%;
+  max-width: 450px;
   height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-
+/* Rest of the CSS styles remain the same */
 h1 {
   margin-bottom: 20px;
 }

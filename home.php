@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kode+Mono&display=swap" rel="stylesheet">
@@ -21,24 +29,24 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
         </script>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary p-4 fixed-top">
-        <div class="container-fluid">
-            <img src="logo2.png" alt="logo" width="100" height="100">
-            <a class="navbar-brand" href="#">Focus Forge</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <img src="logo2.png" alt="" class="img-fluid" style="max-width: 80px; height: auto;">
+            <a class="navbar-brand" href="home.php">Focus Forge</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0">
                     <li class="nav-item">
                         <a class="nav-link" href="home.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" >About</a>
+                        <a class="nav-link" href="#">Features</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" >Features</a>
+                        <a class="nav-link" href="#">About Us</a>
                     </li>
                 </ul>
             </div>
@@ -90,7 +98,8 @@
             <div class="card h-100">
                 <img src="stopwatch2.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title"><a href="timer.php" style="text-decoration:none; color:black">Focus Timer</a></h5>
+                    <h5 class="card-title"><a href="timer.php" style="text-decoration:none; color:black">Focus
+                            Timer</a></h5>
                     <p class="card-text">A timer to help you focus in a comfortable zone.</p>
                 </div>
             </div>
@@ -99,21 +108,32 @@
             <div class="card h-100">
                 <img src="todolist1.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title"><a href="index.php" style="text-decoration:none; color:black">To-Do List</a></h5>
+                    <h5 class="card-title"><a href="index.php" style="text-decoration:none; color:black">To-Do List</a>
+                    </h5>
                     <p class="card-text">List out your tasks to have a clear vision and be productive.</p>
                 </div>
             </div>
         </div>
         <div class="col">
             <div class="card h-100">
-                <img src="spotifylogo1.png" class="card-img-top" alt="...">
+                <img src="musicplayer.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Spotify</h5>
-                    <p class="card-text">Connect your Spotify account to stream music while working.</p>
+                    <h5 class="card-title"><a href="musicplayer.php" style="text-decoration:none; color:black">Music Player</a>
+                    <p class="card-text">Listen to variety of music while working.</p>
                 </div>
             </div>
         </div>
     </div>
+    <section class="main">
+        <div class="container py-5">
+            <div class="row py-4">
+                <div class="col-lg-7 pt-5 text-center">
+                    <h1 class="pt-5">Focus more and be a better you everyday</h1>
+                    <button class="btn1 mt-3" id="loginButton"><a href="timer.php">Start Focusing Now</a></button> 
+                </div>
+            </div>
+        </div>
+    </section>
     <footer class="site-footer">
         <div class="container">
             <div class="row">
@@ -127,8 +147,8 @@
                     <h6>Quick Links</h6>
                     <ul class="footer-links">
                         <li><a href="home.php">Home</a></li>
-                        <li><a >About</a></li>
-                        <li><a >Features</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Features</a></li>
                     </ul>
                 </div>
 
